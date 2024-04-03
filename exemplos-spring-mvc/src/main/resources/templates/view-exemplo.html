@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>View Exemplo</h1>
+<h1>Spring MVC - Exemplo</h1>
+<p th:text="${texto}">Texto</p>
+<p th:text="${numero}">Número</p>
+<p th:text="${dataHora}">Data</p>
+
+<tr th:each="item: ${lista}">
+    <td th:text="${item}" />
+</tr>
+</body>
+</html>
